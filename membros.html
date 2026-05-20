@@ -1,84 +1,120 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Membros - LTIA</title>
-    <link rel="stylesheet" href="css/estilo.css">
-</head>
-<body>
+<section class="card">
+    <h2>Coordenação</h2>
 
-<header>
-    <div class="container">
-        <h1>Membros do LTIA</h1>
-        <p>Equipe acadêmica e técnica vinculada ao laboratório</p>
+    <style>
+        .coordenador {
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #d9e2e7;
+        }
+
+        .coordenador:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .foto-coordenador {
+            width: 220px;
+            min-width: 220px;
+        }
+
+        .foto-coordenador img {
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #d9e2e7;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        .curriculo-coordenador {
+            flex: 1;
+        }
+
+        .curriculo-coordenador h3 {
+            margin-top: 0;
+            color: #12395b;
+        }
+
+        .curriculo-coordenador p {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        @media (max-width: 800px) {
+            .coordenador {
+                flex-direction: column;
+            }
+
+            .foto-coordenador {
+                width: 100%;
+                max-width: 320px;
+            }
+        }
+    </style>
+
+    <div class="coordenador">
+        <div class="foto-coordenador">
+            <img src="imagens/membros/clovis.jpg" alt="Coordenador Clovis Junior">
+        </div>
+
+        <div class="curriculo-coordenador">
+            <h3>Clovis Junior</h3>
+
+            <p>
+                <span class="badge">Coordenação</span>
+            </p>
+
+            <p>
+                Inserir mini currículo acadêmico do coordenador. Espaço destinado para informações
+                sobre titulação, área de atuação, linhas de pesquisa, projetos desenvolvidos,
+                vínculo institucional e experiência em tecnologia da informação aplicada ao agronegócio.
+            </p>
+
+            <p>
+                Inserir posteriormente:
+            </p>
+
+            <ul>
+                <li>Currículo Lattes</li>
+                <li>ORCID</li>
+                <li>E-mail institucional</li>
+                <li>Linhas de pesquisa</li>
+            </ul>
+        </div>
     </div>
-</header>
 
-<nav>
-    <div class="container">
-        <a href="index.html">Apresentação</a>
-        <a href="membros.html" class="ativo">Membros</a>
-        <a href="publicacoes.html">Publicações</a>
-        <a href="projetos.html">Projetos</a>
+    <div class="coordenador">
+        <div class="foto-coordenador">
+            <img src="imagens/membros/eberson.jpg" alt="Coordenador Eberson">
+        </div>
+
+        <div class="curriculo-coordenador">
+            <h3>Eberson</h3>
+
+            <p>
+                <span class="badge">Coordenação</span>
+            </p>
+
+            <p>
+                Inserir mini currículo acadêmico do coordenador. Espaço destinado para informações
+                sobre formação acadêmica, experiência em pesquisa, atuação institucional,
+                projetos científicos e participação em atividades relacionadas ao laboratório LTIA.
+            </p>
+
+            <p>
+                Inserir posteriormente:
+            </p>
+
+            <ul>
+                <li>Currículo Lattes</li>
+                <li>ORCID</li>
+                <li>E-mail institucional</li>
+                <li>Projetos vinculados</li>
+            </ul>
+        </div>
     </div>
-</nav>
 
-<main>
-    <section class="card">
-        <h2>Coordenação</h2>
-        <div class="grid">
-            <div class="item">
-                <div class="placeholder-img">Foto do coordenador<br>imagens/membros/coordenador.jpg</div>
-                <h3>Nome do Coordenador</h3>
-                <p><span class="badge">Coordenação</span></p>
-                <p>Inserir titulação, área de atuação, currículo Lattes, ORCID e e-mail institucional.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="card">
-        <h2>Pesquisadores</h2>
-        <div class="grid">
-            <div class="item">
-                <div class="placeholder-img">Foto do membro<br>imagens/membros/membro01.jpg</div>
-                <h3>Nome do Pesquisador</h3>
-                <p><span class="badge">Pesquisador</span></p>
-                <p>Inserir área de pesquisa, vínculo institucional e informações acadêmicas.</p>
-            </div>
-
-            <div class="item">
-                <div class="placeholder-img">Foto do membro<br>imagens/membros/membro02.jpg</div>
-                <h3>Nome do Pesquisador</h3>
-                <p><span class="badge">Pesquisador</span></p>
-                <p>Inserir área de pesquisa, vínculo institucional e informações acadêmicas.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="card">
-        <h2>Estudantes e Colaboradores</h2>
-        <div class="grid">
-            <div class="item">
-                <div class="placeholder-img">Foto do estudante<br>imagens/membros/estudante01.jpg</div>
-                <h3>Nome do Estudante</h3>
-                <p><span class="badge">Discente</span></p>
-                <p>Inserir curso, projeto vinculado e período de participação.</p>
-            </div>
-
-            <div class="item">
-                <div class="placeholder-img">Foto do colaborador<br>imagens/membros/colaborador01.jpg</div>
-                <h3>Nome do Colaborador</h3>
-                <p><span class="badge">Colaborador</span></p>
-                <p>Inserir instituição, função e atividades desenvolvidas.</p>
-            </div>
-        </div>
-    </section>
-</main>
-
-<footer>
-    <p>LTIA - Laboratório de Tecnologia da Informação no Agronegócio</p>
-    <p>Universidade Federal de Rondonópolis - UFR</p>
-</footer>
-
-</body>
-</html>
+</section>
