@@ -1,120 +1,106 @@
-<section class="card">
-    <h2>Coordenação</h2>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Membros - LTIA</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
 
-    <style>
-        .coordenador {
-            display: flex;
-            gap: 24px;
-            align-items: flex-start;
-            margin-bottom: 30px;
-            padding-bottom: 25px;
-            border-bottom: 1px solid #d9e2e7;
-        }
-
-        .coordenador:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
-        }
-
-        .foto-coordenador {
-            width: 220px;
-            min-width: 220px;
-        }
-
-        .foto-coordenador img {
-            width: 100%;
-            border-radius: 10px;
-            border: 1px solid #d9e2e7;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-        }
-
-        .curriculo-coordenador {
-            flex: 1;
-        }
-
-        .curriculo-coordenador h3 {
-            margin-top: 0;
-            color: #12395b;
-        }
-
-        .curriculo-coordenador p {
-            margin-bottom: 10px;
-            text-align: justify;
-        }
-
-        @media (max-width: 800px) {
-            .coordenador {
-                flex-direction: column;
-            }
-
-            .foto-coordenador {
-                width: 100%;
-                max-width: 320px;
-            }
-        }
-    </style>
-
-    <div class="coordenador">
-        <div class="foto-coordenador">
-            <img src="imagens/membros/clovis.jpg" alt="Coordenador Clovis Junior">
-        </div>
-
-        <div class="curriculo-coordenador">
-            <h3>Clovis Junior</h3>
-
-            <p>
-                <span class="badge">Coordenação</span>
-            </p>
-
-            <p>
-                Inserir mini currículo acadêmico do coordenador. Espaço destinado para informações
-                sobre titulação, área de atuação, linhas de pesquisa, projetos desenvolvidos,
-                vínculo institucional e experiência em tecnologia da informação aplicada ao agronegócio.
-            </p>
-
-            <p>
-                Inserir posteriormente:
-            </p>
-
-            <ul>
-                <li>Currículo Lattes</li>
-                <li>ORCID</li>
-                <li>E-mail institucional</li>
-                <li>Linhas de pesquisa</li>
-            </ul>
-        </div>
+<header>
+    <div class="container">
+        <h1>Membros do LTIA</h1>
+        <p>Equipe acadêmica e técnica vinculada ao laboratório</p>
     </div>
+</header>
 
-    <div class="coordenador">
-        <div class="foto-coordenador">
-            <img src="imagens/membros/eberson.jpg" alt="Coordenador Eberson">
-        </div>
-
-        <div class="curriculo-coordenador">
-            <h3>Eberson</h3>
-
-            <p>
-                <span class="badge">Coordenação</span>
-            </p>
-
-            <p>
-                Inserir mini currículo acadêmico do coordenador. Espaço destinado para informações
-                sobre formação acadêmica, experiência em pesquisa, atuação institucional,
-                projetos científicos e participação em atividades relacionadas ao laboratório LTIA.
-            </p>
-
-            <p>
-                Inserir posteriormente:
-            </p>
-
-            <ul>
-                <li>Currículo Lattes</li>
-                <li>ORCID</li>
-                <li>E-mail institucional</li>
-                <li>Projetos vinculados</li>
-            </ul>
-        </div>
+<nav>
+    <div class="container">
+        <a href="index.html">Apresentação</a>
+        <a href="membros.html" class="ativo">Membros</a>
+        <a href="publicacoes.html">Publicações</a>
+        <a href="projetos.html">Projetos</a>
     </div>
+</nav>
 
-</section>
+<main>
+    <section class="card">
+        <h2>Coordenação</h2>
+
+        <div class="grid">
+
+            <div class="item">
+                <img src="imagens/membros/clovis.jpg" alt="Clovis Junior" style="width:100%; max-width:220px; border-radius:10px; border:1px solid #d9e2e7; display:block; margin-bottom:15px;">
+
+                <h3>Clovis Junior</h3>
+                <p><strong>Função:</strong> Coordenador</p>
+                <p><strong>Vínculo:</strong> Universidade Federal de Rondonópolis - UFR</p>
+                <p><strong>Área de atuação:</strong> inserir área de atuação.</p>
+                <p><strong>Mini currículo:</strong> inserir titulação, experiência acadêmica, linhas de pesquisa, projetos desenvolvidos, currículo Lattes, ORCID e e-mail institucional.</p>
+            </div>
+
+            <div class="item">
+                <img src="imagens/membros/eberson.jpg" alt="Eberson" style="width:100%; max-width:220px; border-radius:10px; border:1px solid #d9e2e7; display:block; margin-bottom:15px;">
+
+                <h3>Eberson</h3>
+                <p><strong>Função:</strong> Coordenador</p>
+                <p><strong>Vínculo:</strong> Universidade Federal de Rondonópolis - UFR</p>
+                <p><strong>Área de atuação:</strong> inserir área de atuação.</p>
+                <p><strong>Mini currículo:</strong> inserir titulação, experiência acadêmica, linhas de pesquisa, projetos desenvolvidos, currículo Lattes, ORCID e e-mail institucional.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Pesquisadores</h2>
+
+        <div class="grid">
+            <div class="item">
+                <div class="placeholder-img">Foto do pesquisador<br>imagens/membros/pesquisador01.jpg</div>
+                <h3>Nome do Pesquisador</h3>
+                <p><strong>Função:</strong> Pesquisador</p>
+                <p><strong>Área de atuação:</strong> inserir área de pesquisa.</p>
+                <p><strong>Mini currículo:</strong> inserir informações acadêmicas e institucionais.</p>
+            </div>
+
+            <div class="item">
+                <div class="placeholder-img">Foto do pesquisador<br>imagens/membros/pesquisador02.jpg</div>
+                <h3>Nome do Pesquisador</h3>
+                <p><strong>Função:</strong> Pesquisador</p>
+                <p><strong>Área de atuação:</strong> inserir área de pesquisa.</p>
+                <p><strong>Mini currículo:</strong> inserir informações acadêmicas e institucionais.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Estudantes e Colaboradores</h2>
+
+        <div class="grid">
+            <div class="item">
+                <div class="placeholder-img">Foto do estudante<br>imagens/membros/estudante01.jpg</div>
+                <h3>Nome do Estudante</h3>
+                <p><strong>Função:</strong> Discente</p>
+                <p><strong>Curso:</strong> inserir curso.</p>
+                <p><strong>Projeto vinculado:</strong> inserir projeto.</p>
+            </div>
+
+            <div class="item">
+                <div class="placeholder-img">Foto do colaborador<br>imagens/membros/colaborador01.jpg</div>
+                <h3>Nome do Colaborador</h3>
+                <p><strong>Função:</strong> Colaborador</p>
+                <p><strong>Instituição:</strong> inserir instituição.</p>
+                <p><strong>Atividades:</strong> inserir atividades desenvolvidas.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>LTIA - Laboratório de Tecnologia da Informação no Agronegócio</p>
+    <p>Universidade Federal de Rondonópolis - UFR</p>
+</footer>
+
+</body>
+</html>
