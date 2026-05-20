@@ -1,0 +1,158 @@
+/* LTIA - Laboratório de Tecnologia da Informação no Agronegócio */
+:root {
+    --azul-escuro: #12395b;
+    --azul-medio: #1f6f9f;
+    --verde: #2f6f4e;
+    --verde-claro: #e8f3ec;
+    --cinza-fundo: #f5f7f8;
+    --cinza-texto: #333333;
+    --branco: #ffffff;
+    --borda: #d9e2e7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cinza-texto);
+    background: var(--cinza-fundo);
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, var(--azul-escuro), var(--verde));
+    color: var(--branco);
+    padding: 32px 20px;
+}
+
+header .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 8px 0 0;
+    font-size: 1.05rem;
+}
+
+nav {
+    background: var(--branco);
+    border-bottom: 1px solid var(--borda);
+}
+
+nav .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px 20px;
+}
+
+nav a {
+    color: var(--azul-escuro);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+nav a:hover,
+nav a.ativo {
+    background: var(--verde-claro);
+    color: var(--verde);
+}
+
+main {
+    max-width: 1100px;
+    margin: 28px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 22px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+h2 {
+    color: var(--azul-escuro);
+    margin-top: 0;
+    border-left: 5px solid var(--verde);
+    padding-left: 12px;
+}
+
+h3 {
+    color: var(--verde);
+    margin-bottom: 6px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.placeholder-img {
+    height: 170px;
+    border: 2px dashed var(--borda);
+    background: #f8fafb;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6d7d86;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.item {
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 16px;
+    background: #ffffff;
+}
+
+.badge {
+    display: inline-block;
+    background: var(--verde-claro);
+    color: var(--verde);
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+footer {
+    background: var(--azul-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 22px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav .container {
+        flex-direction: column;
+    }
+}
